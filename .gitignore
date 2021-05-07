@@ -1,0 +1,8 @@
+# node Modules
+node_modules
+
+# build
+build
+
+# css
+dist.css
