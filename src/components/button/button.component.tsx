@@ -56,3 +56,6 @@ export const ArgoButton: React.FC<ArgoButtonProps &
       </button>
     )
   }
+
+// Precisa botar default pra buildar. E precisa ter o const por conta do storybook
+export default ArgoButton;
