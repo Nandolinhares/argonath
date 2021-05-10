@@ -1,0 +1,13 @@
+{
+  "stone": {
+    "colorPurple": "#634BCA",
+    "colorMediumGrey1": "#677481",
+    "colorMediumGrey4": "#DCE0E9",
+    "primaryColor": "#14AA4B",
+    "colorLightGrey2": "#F8F9FD",
+    "colorDarkGrey2": "#3B4652",
+    "colorWhite": "#FFFFFF",
+    "colorBlack": "#1D242B",
+    "backgroundRowExpand": "rgba(248, 249, 253, 0.4)"
+  }
+}
