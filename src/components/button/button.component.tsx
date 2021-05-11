@@ -1,17 +1,11 @@
 import React, { useMemo } from 'react';
-import { buttonColorTypeHelper } from './helpers/button-color-type.helper';
-import { buttonSizeHelper } from './helpers/button-size.helper';
-import { buttonVariantHelper } from './helpers/button-variant.helper';
+import { buttonSetPropertiesHelper } from './helpers';
 
 export interface ArgoButtonProps {
   /**
    * Choose the size of button
   */
   size?: 'small' | 'medium' | 'large';
-  /**
-   * If neccessary, choose custom sizePx of buttonn
-  */
-  sizePx?: number;
   /**
    * If neccessary, chose custom css
   */
@@ -31,20 +25,7 @@ export const ArgoButton: React.FC<ArgoButtonProps &
   ({ ...props }) => {
     // Propriedades css aplicadas no elemento
     const properties = useMemo(() => {
-      let result: string = '';
-      if (props.size) {
-        let size = buttonSizeHelper(props.size);
-        result = result.concat(` ${size}`);
-      }
-      if (props.variant) {
-        let variant = buttonVariantHelper(props.variant);
-        result = result.concat(` ${variant}`);
-      }
-      if (props.colorType) {
-        let colorType = buttonColorTypeHelper(props.colorType);
-        result = result.concat(` ${colorType}`);
-      }
-      return result;
+      return buttonSetPropertiesHelper(props);
     }, [props])
 
     return (

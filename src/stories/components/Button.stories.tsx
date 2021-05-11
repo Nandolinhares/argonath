@@ -12,7 +12,6 @@ const Template: Story<ArgoButtonProps> = (args) => <ArgoButton {...args}>Texto a
 export const Primary = Template.bind({});
 Primary.args = {
   variant: 'outlined',
-  colorType: 'primary'
 };
 
 // export const Secondary = Template.bind({});
